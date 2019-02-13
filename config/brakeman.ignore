@@ -1,0 +1,44 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Basic Auth",
+      "warning_code": 9,
+      "fingerprint": "03f3035072139b49a184dc75eb973dcdca9adadf4f2ebe191593e442e1ca4e96",
+      "check_name": "BasicAuth",
+      "message": "Basic authentication password stored in source code",
+      "file": "app/controllers/comments_controller.rb",
+      "line": 4,
+      "link": "https://brakemanscanner.org/docs/warning_types/basic_auth/",
+      "code": "http_basic_authenticate_with(:name => \"dhh\", :password => \"secret\", :only => :destroy)",
+      "render_path": null,
+      "location": {
+        "type": "controller",
+        "controller": "CommentsController"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": "Test warning"
+    },
+    {
+      "warning_type": "Basic Auth",
+      "warning_code": 9,
+      "fingerprint": "8a4c83f83dc8f01cfa502ee0c76cfa7157d7c3e14c7724ad044b9399be90ca0f",
+      "check_name": "BasicAuth",
+      "message": "Basic authentication password stored in source code",
+      "file": "app/controllers/articles_controller.rb",
+      "line": 4,
+      "link": "https://brakemanscanner.org/docs/warning_types/basic_auth/",
+      "code": "http_basic_authenticate_with(:name => \"dhh\", :password => \"secret\", :except => ([:index, :show]))",
+      "render_path": null,
+      "location": {
+        "type": "controller",
+        "controller": "ArticlesController"
+      },
+      "user_input": null,
+      "confidence": "High",
+      "note": "Test warning"
+    }
+  ],
+  "updated": "2019-02-13 20:17:41 +0200",
+  "brakeman_version": "4.4.0"
+}
